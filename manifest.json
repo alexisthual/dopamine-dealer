@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "name in manifest.json",
-  "description": "description in manifest.json",
+  "name": "Dopamime dealer",
+  "description": "An extension to limit the number of times one can access listed time-consuming websites per day.",
   "options_ui": {
     "page": "src/pages/options/index.html"
   },
@@ -11,14 +11,14 @@
       "32": "icon-32.png"
     }
   },
-  "chrome_url_overrides": {
-    "newtab": "src/pages/newtab/index.html"
-  },
   "icons": {
     "128": "icon-128.png"
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage",
+    "tabs",
+    "webNavigation"
   ],
   "content_scripts": [
     {
@@ -41,9 +41,10 @@
       "resources": [
         "contentStyle.css",
         "icon-128.png",
-        "icon-32.png"
+        "icon-32.png",
+        "UncialAntiqua-Regular.ttf"
       ],
-      "matches": []
+      "matches": ["<all_urls>"]
     }
   ]
 }

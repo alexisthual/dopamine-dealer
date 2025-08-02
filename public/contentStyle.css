@@ -1,0 +1,8 @@
+/* This file is injected through "content_scripts" in the manifest */
+@font-face {
+  font-family: "Uncial Antiqua";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("UncialAntiqua-Regular.ttf") format("truetype");
+}

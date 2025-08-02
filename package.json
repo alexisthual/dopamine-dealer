@@ -1,11 +1,11 @@
 {
-  "name": "vite-web-extension",
-  "version": "1.4.0",
-  "description": "A simple chrome & firefox extension template with Vite, React, TypeScript and Tailwind CSS.",
+  "name": "dopamine-dealer",
+  "version": "0.1.0",
+  "description": "An extension to limit the number of times one can access listed time-consuming websites per day.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JohnBra/vite-web-extension.git"
+    "url": "https://github.com/alexisthual/dopamine-dealer.git"
   },
   "scripts": {
     "build": "vite build --config vite.config.chrome.ts",
