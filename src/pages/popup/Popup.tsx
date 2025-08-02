@@ -27,7 +27,7 @@ const Popup = () => {
 
   return (
     <div className="absolute top-0 left-0 right-0 bottom-0 w-full p-4 bg-gray-100 overflow-auto font-sans">
-      <div className="flex flex-col gap-4 items-stretch justify-center text-gray-900">
+      <div className="flex flex-col gap-4 items-stretch justify-center text-gray-900 text-sm">
         <div className="flex flex-row items-center justify-center gap-4 mb-4">
           <img
             src={browser.runtime.getURL(logo)}
@@ -109,7 +109,18 @@ const Popup = () => {
           />
         </div>
 
-        <div className="font-bold text-base text-left">Contribute</div>
+        <div className="mt-2 font-bold text-base text-left">Contribute</div>
+
+        <div className="text-justify">
+          This extension is free and open-source. It stores data on your device
+          only. You can check the code and contribute to it:{" "}
+          <a
+            href="https://github.com/alexisthual/dopamine-dealer"
+            className="text-indigo-400"
+          >
+            github.com/alexisthual/dopamine-dealer
+          </a>
+        </div>
 
         {/* <div
           className="mt-8 mb-2 bg-indigo-100/80 text-base text-indigo-950 font-medium px-4 py-2 rounded cursor-pointer border border-solid border-indigo-300 hover:bg-indigo-200/80 transition-colors"
