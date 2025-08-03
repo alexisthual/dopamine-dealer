@@ -1,6 +1,5 @@
 <div align="center">
   <img src="public/icon-128.png" alt="mascot"/>
-  <h1>Dopamine dealer</h1>
 
   <p>
     A tiny browser extension<br/>
@@ -8,6 +7,14 @@
     in order to improve your ability to focus throughout the day!
   </p>
 </div>
+
+# Dopamine dealer
+
+Dopamine dealer is a Firefox extension that enables you to set a list of websites you want to spend less time on.
+Contrary to other extensions, it does not only check the overall time you can spend on these websites,
+but also limits the number of times you access them every day.
+
+The goal is to enable you to avoid context-switching behaviours that take you out of focus. Enjoy!
 
 ## Develoment (section from [initial boilerplate](https://github.com/JohnBra/vite-web-extension)) <a name="dev"></a>
 
@@ -123,7 +130,23 @@ to add other translations and retrieve them in the extension.
 If you don't need i18n you can ignore the `locales` directory until you need it, as it won't
 be copied into the build folder unless the `localize` flag is set to `true`.
 
-### Publish your extension to the CWS<a name="publish"></a>
+## Publish your extension
+
+### For Firefox (Firefox Add-Ons)<a name="publish-firefox"></a>
+
+You will need to register and enable two-factor authentication on [https://addons.mozilla.org/](https://addons.mozilla.org/).
+
+Build and compress the extension, and compress the repo for inspection by the Mozilla security teams (since the code is transpiled, they need to look at the origial code):
+
+```bash
+yarn build:firefox
+cd dist_firefox
+zip dist_firefox.zip -r "./*"
+cd ../
+zip dopamine-dealer.zip -r "./*" -x ".git/*" ".github/*" "node_modules/*" "dist_firefox/*" "dist_chrome/*" "moodboard/*" dist_firefox.zip dist_chrome.zip
+```
+
+### For Chrome (Chrome Web Store)<a name="publish-chrome"></a>
 
 To upload an extension to the Chrome store you have to pack (zip) it and then upload it to your item
 in the Chrome Web Store.
