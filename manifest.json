@@ -2,9 +2,6 @@
   "manifest_version": 3,
   "name": "Dopamime dealer",
   "description": "An extension to limit the number of times one can access listed time-consuming websites per day.",
-  "options_ui": {
-    "page": "src/pages/options/index.html"
-  },
   "action": {
     "default_popup": "src/pages/popup/index.html",
     "default_icon": {
@@ -35,7 +32,6 @@
       ]
     }
   ],
-  "devtools_page": "src/pages/devtools/index.html",
   "web_accessible_resources": [
     {
       "resources": [
