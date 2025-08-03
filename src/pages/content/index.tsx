@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import browser from "webextension-polyfill";
 import styles from "./style.css?inline";
 import { ShotLog, StorageDataType } from "@pages/background/index";
-import logo from "@assets/img/logo.png";
+import mascot from "@assets/img/mascot.png";
 
 const DopamineDealer = () => {
   const [maxShots, setMaxShots] = useState<number>();
@@ -107,9 +107,9 @@ const DopamineDealer = () => {
     <div className="fixed top-0 left-0 w-full h-full bg-gray-50 flex flex-col items-center justify-center">
       <div className="flex flex-row items-center justify-center gap-3 mb-16">
         <img
-          src={browser.runtime.getURL(logo)}
-          className="w-48 h-auto"
-          alt="Dopamine Dealer Logo"
+          alt="Dopamine dealer mascot"
+          className="w-48 h-auto opacity-90"
+          src={browser.runtime.getURL(mascot)}
         />
         <div className="text-4xl font-bold text-gray-300 uncial-antiqua">
           Dopamine
