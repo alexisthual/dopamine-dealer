@@ -73,7 +73,7 @@ const Popup = () => {
         <div className="font-bold text-base text-left">Settings</div>
 
         <div>
-          <div className="font-bold text-sm text-indigo-600">Hostnames</div>
+          <div className="font-bold text-sm text-indigo-500">Hostnames</div>
           <textarea
             className="p-2 border-2 border-gray-300 rounded w-full h-20 text-sm focus:border-indigo-500 focus:outline focus:outline-transparent"
             placeholder={'e.g. "instagram.com, facebook.com, linkedin.com"'}
@@ -90,7 +90,7 @@ const Popup = () => {
         </div>
 
         <div>
-          <div className="font-bold text-sm text-indigo-600">
+          <div className="font-bold text-sm text-indigo-500">
             Number of shots per day
           </div>
           <input
@@ -112,7 +112,7 @@ const Popup = () => {
         </div>
 
         <div>
-          <div className="font-bold text-sm text-indigo-600">
+          <div className="font-bold text-sm text-indigo-500">
             Individual shot duration (in minutes)
           </div>
           <input
@@ -135,11 +135,13 @@ const Popup = () => {
         <div className="mt-2 font-bold text-base text-left">Contribute</div>
 
         <div className="text-justify">
-          This extension is free and open-source. It stores data on your device
-          only. You can check the code and contribute to it:{" "}
+          This extension stores data on your device only.
+          It comes without warranty of any kind.
+          It is free and open-source.
+          You can check the code, contribute to it and report issues:{" "}
           <a
             href="https://github.com/alexisthual/dopamine-dealer"
-            className="text-indigo-400"
+            className="text-indigo-500 underline decoration-dotted underline-offset-2"
           >
             github.com/alexisthual/dopamine-dealer
           </a>
