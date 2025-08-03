@@ -17,6 +17,7 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
+      "@public/*": ["public/*"],
       "@src/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@locales/*": ["src/locales/*"],
@@ -24,6 +25,7 @@
     }
   },
   "include": [
+    "public",
     "src",
     "utils",
     "vite.config.base.ts",
