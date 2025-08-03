@@ -1,12 +1,15 @@
 <div align="center">
-  <img src="public/icon-128.png" alt="logo"/>
+  <img src="public/icon-128.png" alt="mascot"/>
+  <h1>Dopamine dealer</h1>
+
+  <p>
+    A tiny browser extension<br/>
+    that limits the number of times you can access time-consuming websites<br/>
+    in order to improve your ability to focus throughout the day!
+  </p>
 </div>
 
-# Dopamine dealer
-
-A simple browser extension that let's you list time-consuming websites and limit the number of times you can access them per day.
-
-## Develoment (section from initial boilerplate) <a name="dev"></a>
+## Develoment (section from [initial boilerplate](https://github.com/JohnBra/vite-web-extension)) <a name="dev"></a>
 
 ### Getting Started <a name="gettingStarted"></a>
 
